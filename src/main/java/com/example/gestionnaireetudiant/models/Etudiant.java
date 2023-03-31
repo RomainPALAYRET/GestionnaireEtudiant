@@ -10,8 +10,8 @@ public class Etudiant {
         if(nom.isEmpty() || prenom.isEmpty()) {
             throw new IllegalArgumentException("le nom et le prénom ne doivent pas être vide");
         }
-        if(moyenne < 0) {
-            throw new IllegalArgumentException("la moyenne ne peut pas être négative");
+        if(moyenne < 0 || moyenne > 20) {
+            throw new IllegalArgumentException("la moyenne doit être comprise entre 0 et 20 compris");
         }
 
 
