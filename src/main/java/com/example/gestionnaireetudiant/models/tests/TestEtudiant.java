@@ -65,4 +65,10 @@ public class TestEtudiant {
         Etudiant etudiant = new Etudiant( "Dupont", "Benoit", 12.00);
         assertEquals(etudiant.getMoyenne(), 12.00, 0.01);
     }
+
+    @Test
+    public void testConstructeur9() {
+        Etudiant etudiant = new Etudiant( "Dupont", "Benoit", 12.00);
+        assertEquals(etudiant.getNom(), "Dupont");
+    }
 }
