@@ -19,4 +19,12 @@ public class TestEtudiant {
         });
 
     }
+
+    @Test
+    public void testConstructeur3() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            Etudiant etudiant = new Etudiant( "", "Pierre", 12.5);;
+        });
+
+    }
 }
