@@ -6,4 +6,5 @@ module com.example.gestionnaireetudiant {
 
     opens com.example.gestionnaireetudiant to javafx.fxml;
     exports com.example.gestionnaireetudiant;
+    exports com.example.gestionnaireetudiant.models.tests;
 }
