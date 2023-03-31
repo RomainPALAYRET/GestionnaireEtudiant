@@ -71,4 +71,10 @@ public class TestEtudiant {
         Etudiant etudiant = new Etudiant( "Dupont", "Benoit", 12.00);
         assertEquals(etudiant.getNom(), "Dupont");
     }
+
+    @Test
+    public void testConstructeur10() {
+        Etudiant etudiant = new Etudiant( "Dupont", "Benoit", 12.00);
+        assertEquals(etudiant.getPrenom(), "Benoit");
+    }
 }
