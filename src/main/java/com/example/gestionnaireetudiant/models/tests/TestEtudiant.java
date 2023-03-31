@@ -11,4 +11,12 @@ public class TestEtudiant {
     public void testConstructeur() {
         Etudiant etudiant = new Etudiant("Dupont", "Pierre", 12.5);
     }
+
+    @Test
+    public void testConstructeur2() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            Etudiant etudiant = new Etudiant( null, "Pierre", 12.5);;
+        });
+
+    }
 }
