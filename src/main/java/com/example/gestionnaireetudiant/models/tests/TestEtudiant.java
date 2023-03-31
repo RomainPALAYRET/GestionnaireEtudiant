@@ -59,4 +59,10 @@ public class TestEtudiant {
         });
 
     }
+
+    @Test
+    public void testConstructeur8() {
+        Etudiant etudiant = new Etudiant( "Dupont", "Benoit", 12.00);
+        assertEquals(etudiant.getMoyenne(), 12.00);
+    }
 }
