@@ -6,6 +6,7 @@ public class Etudiant {
 
     double moyenne;
     String nom;
+    String prenom;
 
     public Etudiant(String nom, String prenom, double moyenne) {
         if(nom == null || prenom == null) {
@@ -20,6 +21,7 @@ public class Etudiant {
 
         this.moyenne = moyenne;
         this.nom = nom;
+        this.prenom = prenom;
 
     }
 
@@ -29,5 +31,9 @@ public class Etudiant {
 
     public String getNom() {
         return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
     }
 }
